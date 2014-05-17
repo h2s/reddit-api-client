@@ -14,10 +14,6 @@
         }
       }
     },
-	
-	
-	
-	
 
     "GetLinksBySubreddit": {
       "httpMethod": "GET",
