@@ -36,6 +36,11 @@ $submit = $client->getCommand(
     )
 );
 $submit->execute();
+
+$get = $client->getCommand('GetInbox');
+$res = $get->execute();
+$messageArray =  (array) $res;
+
 ```
 
 Installation
@@ -68,6 +73,7 @@ is incomplete.
 * `r/{subreddit}.json`
 * `user/{id}.json`
 * `user/{id}/about.json`
+* `message/inbox.json`
 
 The above list covers many of the most common interactions such as logging in,
 reading and posting links and comments, and casting votes. However, there are

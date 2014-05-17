@@ -1,0 +1,18 @@
+{
+  "operations": {
+	    "GetInbox": {
+      "httpMethod": "GET",
+      "uri": "/message/inbox.json",
+      "summary": "Cast a vote on a thing",
+      "responseClass": "Reddit\\Api\\Response\\Handler",
+      "parameters": {
+        "id": {
+          "location": "uri",
+          "description": "An empty param for GetInbox",
+          "required": false
+        }
+      }
+    }
+	
+  }
+}
