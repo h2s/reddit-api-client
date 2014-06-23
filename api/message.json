@@ -1,0 +1,30 @@
+{
+  "operations": {
+	    "GetInbox": {
+      "httpMethod": "GET",
+      "uri": "/message/inbox.json",
+      "summary": "Get inbox messages",
+      "responseClass": "Reddit\\Api\\Response\\Handler",
+      "parameters": {
+        "id": {
+          "location": "uri",
+          "description": " ",
+          "required": false
+        }
+      }
+    },
+	    "GetInboxUnread": {
+      "httpMethod": "GET",
+      "uri": "/message/unread.json",
+      "summary": "Get unread inbox messages",
+      "responseClass": "Reddit\\Api\\Response\\Handler",
+      "parameters": {
+        "id": {
+          "location": "uri",
+          "description": " ",
+          "required": false
+        }
+      }
+    }
+  }
+}
